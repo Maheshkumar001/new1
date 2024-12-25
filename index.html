@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+   <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Responsive Portfolio</title>
+  </head>
+  <body>
+    <nav >
+      <div class="nav__content">
+        <div class="logo"><a href="#">Portfolio</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Skills">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section" id="Home">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">Hello, I'm</p>
+         
+    <span class="Mahesh"> Maheshkumar</span>
+        
+
+          <h1 class="title">
+            I'm  a <span class="typing"></span> 
+          </h1>
+         
+        <p class="description">
+          Welcome to my portfolio! I'm Maheshkumar, a passionate Data Analyst dedicated to transforming data into impactful insights and creating interactive Business Intelligence reports.
+          </p>
+          
+          <div class="action__btns">
+            <button class="hire__me">Hire Me</button>
+            <a href="https://drive.google.com/file/d/1SORKRdcRu7jD4wCES25x25WJR6YTvLAS/view?usp=drive_link" target="_blank" class="cv"> <button  class="portfolio" target="_blank">Download CV</button></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="mahesh.png" alt="profile" />
+        </div>
+      </div>
+    </section>
+
+<!---->
+<!--about section -->
+
+<section class="about" id="about">
+  <div class="max-width" >
+      <h1 class="title1" >About me</h1>
+      
+      <div class="about-content">
+          <div class="column left">
+          <img src="about.jpg"> </div>
+          <div class="column right">
+              <div class="text">I'm Mahesh and I'm a <span class="typing-2"></span></div>
+              <p> 
+                  Hello all, I'm <b>Maheshkumar</b> from Coimbatore, armed with an MCA degree from KGISL Institute of
+                   Information Management. Currently serving as a Process Associate at Visionet Systems Pvt Ltd in Coimbatore,
+                    I bring previous Software Developer experience from Shiash Info Solutions in Chennai. 
+                    My programming language proficiency is complemented by the successful completion of a comprehensive 
+                    web development course on Udemy. Actively exploring opportunities in PHP, web development, frontend development, 
+                    or data analysis. Eager to contribute my skills and drive for innovation to your team. Connect with me on 
+                    LinkedIn or via email for potential collaborations.
+                  
+                   </p>
+             <br>
+             <p id="download">Click on the link to download it:<p></p>
+             <a href="certificate.html" target="_blank"> Certifications</a>
+             <a href="https://drive.google.com/file/d/1SORKRdcRu7jD4wCES25x25WJR6YTvLAS/view?usp=drive_link" download="" target="_blank">Download CV</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Project Section -->
+<section class="projects" id="Project">
+  <h1 class="projects-title">PROJECTS</h1>
+  <div class="projects-container"> 
+    <div class="project-card">
+      <a href="responsive-card-slider-main/health.html" target="_blank">
+        <img src="car.png" alt="Car Sales Report">
+        <p>CAR SALES REPORT</p>
+      </a>
+    </div>
+      <div class="project-card" onclick="navigateToDetails('bank')">
+          <img src="bank.jpg" alt="Bank Analytics Report">
+          <p>BANK ANALYTICS REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('energy')">
+          <img src="energy.jpg" alt="Energy Based Report">
+          <p>ENERGY BASED REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('manufacturing')">
+          <img src="manfacture.jpg" alt="Manufacturing Report">
+          <p>MANUFACTURING REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('lab')">
+          <img src="lab.jpg" alt="Lab Based Report">
+          <p>LAB BASED REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('hospital')">
+          <img src="hospita.jpg" alt="Hospital Report">
+          <p>HOSPITAL REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('real-estate')">
+          <img src="real estate.jpg" alt="Real Estate Report">
+          <p>REAL ESTATE REPORT</p>
+      </div>
+      <div class="project-card" onclick="navigateToDetails('hr')">
+          <img src="hr.jpg" alt="HR Report">
+          <p>HR REPORT</p>
+      </div>
+  </div>
+</section>
+
+
+
+<!--
+Skills    
+-->
+<section id="Skills">
+<section class="skil" id="skil">
+  
+  <div class="skills">
+    <div class="max-width">
+      <h2 class="title">MY SKILLS</h2>
+      <div class="skills-content">
+        <div class="bars">
+          <div class="info">
+            <span>POWER BI</span>
+            <span>90%</span>
+          </div>
+          <div class="line POWER"></div>
+  
+          <div class="info">
+            <span>SQL</span>
+            <span>80%</span>
+          </div>
+          <div class="line SQL"></div>
+  
+          <div class="info">
+            <span>DAX</span>
+            <span>70%</span>
+          </div>
+          <div class="line DAX"></div>
+  
+          <div class="info">
+            <span>Python</span>
+            <span>50%</span>
+          </div>
+          <div class="line python"></div>
+  
+          <div class="info">
+            <span>DATA VISUALIZATION</span>
+            <span>90%</span>
+          </div>
+          <div class="line DATA"></div>
+  
+          <div class="info">
+            <span>ETL</span>
+            <span>80%</span>
+          </div>
+          <div class="line ETL"></div>
+
+          <div class="info">
+            <span>DATA ANALYSIS</span>
+            <span>100%</span>
+          </div>
+          <div class="line ANALYSIS"></div>
+
+          <div class="info">
+            <span>QLIK VIEW</span>
+            <span>70%</span>
+          </div>
+          <div class="line QLIK"></div>
+
+          <div class="info">
+            <span>TABLEAU</span>
+            <span>70%</span>
+          </div>
+          <div class="line TABLEAU"></div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<div class="div" id="div">  <h1>Contact Me</h1></div>
+<!-- Contact page-->
+<section class="contact-section">
+  <div class="container">
+      <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>To learn more about being featured. Get in touch - we'd love to hear from you!</p>
+          <ul>
+            <div><li>
+                  <span>👤</span>
+                  <strong>Name:</strong> MAHESHKUMAR D
+              </li>
+              <br>
+              <li>
+                  <span>📍</span>
+                  <strong>Address:</strong> Maheshkumar, Coimbatore
+              </li>
+              <br>
+              <li>
+                  <span>📧</span>
+                  <strong>Email:</strong> maheshmk0303@gmail.com
+              </li>
+          </ul>
+      </div>
+      <div class="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f2af3ea7-b3d1-4ea3-bcf4-4c081daefbd1">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" rows="5" required></textarea>
+              <button type="submit">Submit</button>
+          </form></div>
+      </div>
+  </div>
+  
+</section>
+<section class="scontainer">
+  <div class="wrapper">
+    <a href="#" class="icon facebook">
+      <div class="tooltip">Facebook</div>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </a>
+    <a href="#" class="icon twitter">
+      <div class="tooltip">Twitter</div>
+      <span><i class="fab fa-twitter"></i></span>
+    </a>
+    <a href="#" class="icon instagram">
+      <div class="tooltip">Instagram</div>
+      <span><i class="fab fa-instagram"></i></span>
+    </a>
+    <a href="#" class="icon github">
+      <div class="tooltip">Github</div>
+      <span><i class="fab fa-github"></i></span>
+    </a>
+    <a href="#" class="icon youtube">
+      <div class="tooltip">YouTube</div>
+      <span><i class="fab fa-youtube"></i></span>
+    </a>
+  </div>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
